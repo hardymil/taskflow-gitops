@@ -169,3 +169,144 @@ Avec un `git revert`, le retour en arrière passe par une PR :
 - **il est tracé** : on sait qui l'a fait, quand et pourquoi ;
 - **il est relu** : l'autre membre de l'équipe doit l'approuver ;
 - **il est réversible** : on peut annuler le revert si besoin.
+
+## Après-midi : stratégies de release
+
+### Journal des déploiements de l'après-midi
+
+Les changements de version passent toujours par une Pull Request. Les seules
+commandes faites à la main sont `promote` et `abort` : elles ne changent pas
+ce que dit Git, elles disent seulement à Argo Rollouts de continuer ou d'arrêter.
+
+| Heure (merge) | Action | Version | PR | Résultat observé |
+| --- | --- | --- | --- | --- |
+| 14:17 | Le Deployment devient un Rollout Blue-Green | 1.0.0 | #7 | Coupure d'environ 6 secondes pendant le remplacement des pods |
+| 14:24 | Nouvelle version en Blue-Green | 1.1.0 | #8 | 8 pods : `taskflow` en 1.0.0, `taskflow-preview` en 1.1.0 |
+| Après 14:24 | `promote` | 1.1.0 | — | Tout le trafic passe d'un coup en 1.1.0. Les anciens pods sont supprimés 30 secondes après |
+| 14:34 | Le Rollout passe en Canary | 1.1.0 | #9 | Aucun pod remplacé. Le service `taskflow-preview` est supprimé |
+| 14:39 | Nouvelle version en Canary (25 %) | 2.0.0 | #10 | 10 à 16 réponses en 2.0.0 sur 40, toutes en http 200 |
+| Après 14:39 | `promote` jusqu'à 100 % | 2.0.0 | — | La 2.0.0 prend le trafic par paliers, puis 40 réponses en 2.0.0 |
+| 14:47 | Nouvelle version en Canary (25 %) | 2.1.0 | #11 | 3 à 4 erreurs 500 sur 40 requêtes |
+| Après 14:47 | `abort` | 2.0.0 | — | 40 réponses en 2.0.0. Rollout et Argo CD en « Degraded » |
+| 14:52 | Revert de la PR #11 | 2.0.0 | #12 | Rollout et Argo CD en « Healthy », sans recréer de pod |
+
+### A. Blue-Green
+
+La nouvelle version démarre **à côté** de l'ancienne. Les utilisateurs restent
+sur l'ancienne version tant qu'on n'a pas fait `promote`.
+
+Avant `promote`, on teste les deux services :
+
+```
+$ ./scripts/observe.sh taskflow
+     40 version=1.0.0 http=200
+$ ./scripts/observe.sh taskflow-preview
+     40 version=1.1.0 http=200
+```
+
+Il y a 8 pods en même temps (4 en 1.0.0 et 4 en 1.1.0) : le Blue-Green demande
+deux fois plus de ressources pendant le changement.
+
+Argo CD affiche `Synced` mais `Suspended` : le cluster correspond bien à Git,
+mais le déploiement attend une décision humaine. **Synced ne veut pas dire Healthy.**
+
+Après `promote`, tout le trafic passe d'un coup sur la nouvelle version :
+
+```
+$ kubectl argo rollouts promote taskflow -n taskflow
+$ ./scripts/observe.sh taskflow
+     40 version=1.1.0 http=200
+```
+
+Les pods 1.0.0 restent en vie 30 secondes : pendant ce temps, on peut revenir
+en arrière tout de suite.
+
+**Ce que nous avons remarqué :** quand nous avons remplacé le Deployment par
+le Rollout (PR #7), les anciens pods ont été arrêtés avant que les nouveaux
+soient prêts. L'application a été coupée environ 6 secondes.
+
+### B. Canary
+
+La nouvelle version reçoit d'abord une petite part du trafic. Sans routeur
+de trafic, 25 % veut dire 1 pod sur 4.
+
+Au premier palier avec la 2.0.0 :
+
+```
+$ ./scripts/observe.sh
+     30 version=1.1.0 http=200
+     10 version=2.0.0 http=200
+```
+
+Le chiffre change à chaque essai (entre 10 et 16 sur 40), car chaque requête
+va sur un pod choisi au hasard. Toutes les réponses étaient correctes : nous
+avons fait `promote`, et la 2.0.0 a pris tout le trafic par paliers (50 %, puis 75 %, puis 100 %).
+
+### La 2.1.0 : les probes étaient vertes, les utilisateurs non
+
+Au premier palier avec la 2.1.0 :
+
+```
+$ ./scripts/observe.sh
+     30 version=2.0.0 http=200
+      7 version=2.1.0 http=200
+      3 version=aucune http=500
+```
+
+Les erreurs 500 viennent du pod 2.1.0 : il rate environ une requête sur trois.
+Pourtant :
+
+- le pod 2.1.0 est « prêt », car il répond bien sur `/health` ;
+- Argo CD affiche `Synced` et `Suspended`, sans aucune alerte.
+
+Aucun outil n'a vu le problème. C'est en regardant les vraies réponses que
+nous l'avons trouvé. Nous avons fait `abort` :
+
+```
+$ kubectl argo rollouts abort taskflow -n taskflow
+$ ./scripts/observe.sh
+     40 version=2.0.0 http=200
+```
+
+Tout le trafic est revenu sur la 2.0.0, mais :
+
+| | Ce qu'il dit |
+| --- | --- |
+| Git | La production doit être en 2.1.0 |
+| Le cluster | 4 pods en 2.0.0 |
+| Le Rollout | Degraded (RolloutAborted) |
+| Argo CD | Synced et Degraded |
+
+L'`abort` est un frein d'urgence : il protège les utilisateurs, mais Git demande
+toujours une version cassée. Nous avons donc fait un **revert par PR** (PR #12).
+Git dit de nouveau 2.0.0, et tout est revenu en `Healthy` sans recréer de pod.
+
+## Blue-Green ou Canary pour TaskFlow ?
+
+**Nous choisissons le Canary.**
+
+**Risque.** Avec la 2.1.0 en Canary, environ 10 % des requêtes ont échoué
+(3 ou 4 sur 40). En Blue-Green, après `promote`, 100 % du trafic serait allé
+sur la 2.1.0 : environ une requête sur trois aurait échoué. Le test sur
+`taskflow-preview` n'aurait pas forcément suffi, car les probes étaient vertes.
+
+**Coût.** Le Blue-Green a fait tourner 8 pods pendant le changement.
+Le Canary n'en utilise que 4.
+
+**Retour arrière.** Les deux sont rapides : 30 secondes de retour immédiat
+pour le Blue-Green, quelques secondes avec `abort` pour le Canary.
+
+**Limite.** Avec le Canary, deux versions répondent en même temps.
+Ce n'est pas un problème pour TaskFlow, qui est une API simple. Le Blue-Green
+serait meilleur si deux versions ne pouvaient pas tourner ensemble
+(par exemple après un changement de la base de données).
+
+## Question de vérification
+
+**Pendant un canary, vous faites un abort. Que montrent le Rollout, Argo CD
+et Git, et que faut-il faire ensuite ?**
+
+Le Rollout est `Degraded` et tout le trafic revient sur l'ancienne version.
+Argo CD est `Synced` (le cluster correspond à Git) mais `Degraded`.
+Git demande toujours la nouvelle version. Il faut faire un **revert par PR**
+pour que Git redemande l'ancienne version : tout redevient `Healthy`.
