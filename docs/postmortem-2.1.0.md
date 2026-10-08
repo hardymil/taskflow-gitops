@@ -1,6 +1,5 @@
 # Postmortem — La version 2.1.0 promue en production malgré l'analyse automatique
 
-> Sans reproche : on cherche ce qui a permis l'erreur, pas qui l'a faite.
 
 | Champ | Valeur |
 | --- | --- |
@@ -155,7 +154,7 @@ Cette hypothèse explique toutes les observations, mais **elle n'est pas encore 
 | Tester plusieurs routes dans le scénario k6 (`/`, `/tasks`, `/health`), pas seulement `/tasks` | Milhhhhane | 22/10/2026 |
 | Ajouter une seconde mesure pendant le canary, basée sur le vrai trafic des utilisateurs (taux d'erreurs mesuré par Prometheus) | zakariastrong | 22/10/2026 |
 | Documenter la procédure d'urgence : quand l'analyse bloque un revert, utiliser `retry` puis `promote --full` vers la version demandée par Git | Milhhhhane | 15/10/2026 |
-| ✅ Fait : `abortOnFail` sur les seuils k6, pour arrêter le test dès qu'un seuil est franchi (PR #20) | zakariastrong | 08/10/2026 |
+| Fait : `abortOnFail` sur les seuils k6, pour arrêter le test dès qu'un seuil est franchi (PR #20) | zakariastrong | 08/10/2026 |
 
 ---
 
