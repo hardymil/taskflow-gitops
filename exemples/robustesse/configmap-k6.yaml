@@ -2,6 +2,7 @@
 # Les seuils (thresholds) traduisent notre exigence de robustesse :
 #   - moins de 2 % de requêtes en erreur
 #   - 95 % des réponses en moins de 250 ms
+# abortOnFail : k6 s'arrête dès qu'un seuil est franchi (abort plus rapide).
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -15,8 +16,12 @@ data:
       vus: 5,
       duration: '60s',
       thresholds: {
-        http_req_failed: ['rate<0.02'],
-        http_req_duration: ['p(95)<250'],
+        http_req_failed: [
+          { threshold: 'rate<0.02', abortOnFail: true },
+        ],
+        http_req_duration: [
+          { threshold: 'p(95)<250', abortOnFail: true },
+        ],
       },
     };
 
