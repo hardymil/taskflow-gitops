@@ -310,3 +310,74 @@ Le Rollout est `Degraded` et tout le trafic revient sur l'ancienne version.
 Argo CD est `Synced` (le cluster correspond à Git) mais `Degraded`.
 Git demande toujours la nouvelle version. Il faut faire un **revert par PR**
 pour que Git redemande l'ancienne version : tout redevient `Healthy`.
+
+## Jour 3, matin : le pipeline décide seul
+
+Objectif : brancher un test de charge (k6) comme porte de qualité pendant le canary.
+Si la nouvelle version ne respecte pas les seuils, Argo Rollouts annule tout seul.
+
+### Les seuils (un SLO miniature)
+
+| Mesure | Seuil |
+| --- | --- |
+| Requêtes en erreur (`http_req_failed`) | moins de 2 % |
+| Temps de réponse (`p95`) | moins de 250 ms |
+
+Le test : 5 utilisateurs virtuels, 60 secondes, sur `/tasks`, via le service `taskflow-canary`
+qui ne vise que les pods de la nouvelle version.
+
+### Journal des déploiements du jour 3
+
+| Heure (merge) | Action | Version | PR | Résultat observé |
+| --- | --- | --- | --- | --- |
+| ≈ 10:10 | Étalon (test à la main) | 2.0.0 | — | 740 requêtes, 0 % d'erreurs, p95 = 3,48 ms |
+| 10:43 | Analyse k6 automatique ajoutée au canary | 2.0.0 | #15 | Aucun pod remplacé |
+| 10:59 | Test k6 allongé à 60 secondes | 2.0.0 | #16 | Nouvel étalon : 1 480 requêtes, 0 % d'erreurs, p95 = 3,3 ms |
+| 11:03 | **Déploiement de la 2.1.0** | 2.1.0 | #17 | Analyse **réussie** (0 % d'erreurs). La 2.1.0 monte à 100 % : **incident 1** |
+| ≈ 11:12 | Détection humaine (`observe.sh`) | 2.1.0 | — | 16 erreurs 500 sur 40 |
+| 11:18 | Revert de #17 | 2.0.0 | #18 | Analyse **échouée** (29,83 % d'erreurs) : abort, la 2.1.0 reste |
+| ≈ 11:26 | `retry` + `promote --full` (urgence) | 2.0.0 | — | 40 réponses en 2.0.0, http 200. Fin de l'incident 1 |
+| 11:29 | Déploiement de la 2.2.0 | 2.2.0 | #19 | Analyse réussie, montée à 100 % sans intervention |
+| 11:50 | `abortOnFail` sur les seuils k6 | 2.2.0 | #20 | Le test s'arrête dès qu'un seuil est franchi |
+| 11:58 | 2.1.0 redéployée exprès, pour vérifier l'analyse | 2.1.0 | #21 | Analyse **réussie** à nouveau : **incident 2** |
+| 12:05 | Revert de #21 | 2.2.0 | #22 | `promote --full`, puis 40 réponses en 2.2.0. Fin de l'incident 2 |
+
+### Ce qui s'est passé
+
+Le lab prévoyait que l'analyse **bloque** la 2.1.0. **Chez nous, elle l'a laissée passer, deux fois.**
+
+- La 2.1.0 renvoie 25 à 40 % d'erreurs 500. Ses probes (`/health`) sont pourtant vertes.
+- Le test k6 n'a **pas mesuré** le pod 2.1.0 : le pod canary n'a reçu que 329 requêtes
+  (incident 1), puis **0 requête** `GET /tasks` (incident 2), alors que k6 en a envoyé 1 480.
+- Lors du retour à la 2.0.0, le test a mesuré les pods 2.1.0 cassés, a échoué,
+  et l'abort automatique a **bloqué le retour arrière**.
+
+Tous les détails, les preuves et les actions sont dans le postmortem :
+**[docs/postmortem-2.1.0.md](docs/postmortem-2.1.0.md)**.
+
+### Captures
+
+**L'analyse du retour arrière en échec, et l'analyse de la 2.2.0 réussie**
+(révision 7 : `✖ Failed` ; révision 8 : `✔ Successful`) :
+
+![Analyses : revert en échec, 2.2.0 réussie](docs/captures/j3-analyses-revert-echec-2.2.0-succes.png)
+
+**Le canary 2.2.0 promu jusqu'à 100 %, sans intervention :**
+
+![Canary 2.2.0 promu](docs/captures/j3-canary-promu-2.2.0.png)
+
+**Incident 2 : le service canary ne contient que le pod 2.1.0 (`10.244.0.114`)…**
+
+![Endpoints du service canary](docs/captures/j3-endpoints-canary-2.1.0.png)
+
+**…et pourtant l'analyse réussit, et la 2.1.0 monte à 75 % :**
+
+![Analyse 2.1.0 réussie](docs/captures/j3-2.1.0-analyse-reussie.png)
+
+### Ce qu'on retient
+
+- Un test de charge avec des seuils peut décider seul, **à condition de mesurer la bonne cible**.
+  Il faut le vérifier (compter les requêtes reçues par le pod canary), pas le supposer.
+- L'abort protège les utilisateurs ; le revert dans Git remet la vérité en place.
+- Quand l'analyse bloque un retour vers une version déjà validée : `retry` puis `promote --full`,
+  pour appliquer ce que Git demande.
