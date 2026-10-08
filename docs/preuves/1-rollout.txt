@@ -1,0 +1,34 @@
+Name:            taskflow
+Namespace:       taskflow
+Status:          [31m✖[0m Degraded
+Message:         RolloutAborted: Rollout aborted update to revision 7: Step-based analysis phase error/failed: Metric "test-de-charge-k6" assessed Failed due to failed (1) > failureLimit (0)
+Strategy:        Canary
+  Step:          0/6
+  SetWeight:     0
+  ActualWeight:  0
+Images:          ghcr.io/9m7fjfpv9k-cyber/taskflow:2.1.0 ([32mstable[0m)
+Replicas:
+  Desired:       4
+  Current:       4
+  Updated:       0
+  Ready:         4
+  Available:     4
+
+NAME                                                                 KIND         STATUS        AGE    INFO
+⟳ taskflow                                                           Rollout      [31m✖[0m Degraded    21h    
+├──# revision:7                                                                                        
+│  ├──⧉ [33mtaskflow-c6cf57bd6[0m                                           ReplicaSet   [0m•[0m ScaledDown  20h    [33mcanary[0m
+│  └──α [0mtaskflow-c6cf57bd6-7-1[0m                                       AnalysisRun  [31m✖[0m Failed      3m29s  [31m✖[0m 1
+│     └──⊞ [0m0779c449-7c73-47bf-9980-76cf81ab2f55.test-de-charge-k6.1[0m  Job          [31m✖[0m Failed      3m29s  
+├──# revision:6                                                                                        
+│  ├──⧉ [32mtaskflow-df976ccb5[0m                                           ReplicaSet   [32m✔[0m Healthy     20h    [32mstable[0m
+│  │  ├──□ taskflow-df976ccb5-thtkc                                  Pod          [32m✔[0m Running     18m    ready:1/1
+│  │  ├──□ taskflow-df976ccb5-mwfd5                                  Pod          [32m✔[0m Running     17m    ready:1/1
+│  │  ├──□ taskflow-df976ccb5-mlffp                                  Pod          [32m✔[0m Running     16m    ready:1/1
+│  │  └──□ taskflow-df976ccb5-mdjm5                                  Pod          [32m✔[0m Running     2m14s  ready:1/1
+│  └──α [0mtaskflow-df976ccb5-6-1[0m                                       AnalysisRun  [32m✔[0m Successful  18m    [32m✔[0m 1
+│     └──⊞ [0mf6141cd3-0997-4788-980c-4e1ab694bc56.test-de-charge-k6.1[0m  Job          [32m✔[0m Successful  18m    
+├──# revision:2                                                                                        
+│  └──⧉ taskflow-78cdc8775b                                          ReplicaSet   [0m•[0m ScaledDown  20h    
+└──# revision:1                                                                                        
+   └──⧉ taskflow-5769dcb86c                                          ReplicaSet   [0m•[0m ScaledDown  21h    

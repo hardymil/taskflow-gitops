@@ -1,0 +1,7 @@
+NAME                                                             READY   STATUS      RESTARTS   AGE   IP            NODE                 NOMINATED NODE   READINESS GATES
+0779c449-7c73-47bf-9980-76cf81ab2f55.test-de-charge-k6.1-g4rh5   0/1     Error       0          91s   10.244.0.96   cicd-control-plane   <none>           <none>
+f6141cd3-0997-4788-980c-4e1ab694bc56.test-de-charge-k6.1-cwnj2   0/1     Completed   0          16m   10.244.0.90   cicd-control-plane   <none>           <none>
+taskflow-df976ccb5-mdjm5                                         1/1     Running     0          16s   10.244.0.98   cicd-control-plane   <none>           <none>
+taskflow-df976ccb5-mlffp                                         1/1     Running     0          14m   10.244.0.92   cicd-control-plane   <none>           <none>
+taskflow-df976ccb5-mwfd5                                         1/1     Running     0          15m   10.244.0.91   cicd-control-plane   <none>           <none>
+taskflow-df976ccb5-thtkc                                         1/1     Running     0          16m   10.244.0.89   cicd-control-plane   <none>           <none>

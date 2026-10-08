@@ -1,0 +1,86 @@
+Name:         taskflow-df976ccb5-9-1
+Namespace:    taskflow
+Labels:       app=taskflow
+              rollout-type=Step
+              rollouts-pod-template-hash=df976ccb5
+              step-index=1
+Annotations:  rollout.argoproj.io/revision: 9
+API Version:  argoproj.io/v1alpha1
+Kind:         AnalysisRun
+Metadata:
+  Creation Timestamp:  2026-10-08T09:58:42Z
+  Generation:          17
+  Owner References:
+    API Version:           argoproj.io/v1alpha1
+    Block Owner Deletion:  true
+    Controller:            true
+    Kind:                  Rollout
+    Name:                  taskflow
+    UID:                   f42d0a78-4ecf-4788-a7f3-91c13f45fef4
+  Resource Version:        58037
+  UID:                     d111a5d2-198c-49f9-86f8-15481720b351
+Spec:
+  Args:
+    Name:   cible
+    Value:  http://taskflow-canary
+  Metrics:
+    Name:  test-de-charge-k6
+    Provider:
+      Job:
+        Metadata:
+        Spec:
+          Backoff Limit:  0
+          Template:
+            Metadata:
+            Spec:
+              Containers:
+                Args:
+                  run
+                  /scripts/robustesse.js
+                Env:
+                  Name:             TARGET
+                  Value:            {{args.cible}}
+                Image:              grafana/k6:latest
+                Image Pull Policy:  IfNotPresent
+                Name:               k6
+                Resources:
+                  Limits:
+                    Memory:  256Mi
+                  Requests:
+                    Cpu:     100m
+                    Memory:  64Mi
+                Volume Mounts:
+                  Mount Path:  /scripts
+                  Name:        scripts
+              Restart Policy:  Never
+              Volumes:
+                Config Map:
+                  Name:  k6-robustesse
+                Name:    scripts
+Status:
+  Completed At:  2026-10-08T09:59:57Z
+  Dry Run Summary:
+  Metric Results:
+    Consecutive Success:  1
+    Count:                1
+    Measurements:
+      Finished At:  2026-10-08T09:59:57Z
+      Metadata:
+        Job - Name:       d111a5d2-198c-49f9-86f8-15481720b351.test-de-charge-k6.1
+        Job - Namespace:  taskflow
+      Phase:              Successful
+      Resume At:          2026-10-08T09:59:57Z
+      Started At:         2026-10-08T09:58:42Z
+    Name:                 test-de-charge-k6
+    Phase:                Successful
+    Successful:           1
+  Phase:                  Successful
+  Run Summary:
+    Count:       1
+    Successful:  1
+  Started At:    2026-10-08T09:58:42Z
+Events:
+  Type    Reason                 Age   From                 Message
+  ----    ------                 ----  ----                 -------
+  Normal  MetricSuccessful       100s  rollouts-controller  Metric 'test-de-charge-k6' Completed. Result: Successful
+  Normal  AnalysisRunSuccessful  100s  rollouts-controller  Analysis Completed. Result: Successful

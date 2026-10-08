@@ -1,0 +1,9 @@
+pod/taskflow-df976ccb5-5zvf2 : 71 requêtes, 4 erreurs
+pod/taskflow-df976ccb5-6tt75 : 93 requêtes, 10 erreurs
+pod/taskflow-df976ccb5-6z5fg : 120 requêtes, 8 erreurs
+pod/taskflow-df976ccb5-8bc2j : 87 requêtes, 3 erreurs
+NAME                       READY   STATUS    RESTARTS   AGE
+taskflow-df976ccb5-5zvf2   1/1     Running   0          3m1s
+taskflow-df976ccb5-6tt75   1/1     Running   0          3m36s
+taskflow-df976ccb5-6z5fg   1/1     Running   0          5m32s
+taskflow-df976ccb5-8bc2j   1/1     Running   0          4m11s

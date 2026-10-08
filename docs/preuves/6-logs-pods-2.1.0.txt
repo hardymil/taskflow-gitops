@@ -1,0 +1,308 @@
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:48078 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:59260 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:59272 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:59288 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:60176 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:60192 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:60198 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:43338 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:43342 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:43350 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:55298 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:55306 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:55316 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:57454 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:57468 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:57470 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:52252 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:52258 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:52264 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:59056 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:59060 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:59072 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:50362 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:50376 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:50388 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45894 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45910 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45922 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46420 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46432 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46438 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:53618 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:53620 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:53626 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46292 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46300 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46312 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:35034 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:35042 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:35050 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45010 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45014 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45030 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:55644 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:55658 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:55662 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:53326 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:53332 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:53336 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45624 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45636 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45642 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:36924 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:36932 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:36948 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46126 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46140 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46152 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46892 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46902 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46904 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:35734 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:35738 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:35750 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:54378 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:54394 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:54400 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:37154 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:37162 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:37166 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:54520 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:54526 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:54532 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.97:43082 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.97:38276 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.97:38288 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:48504 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.97:38352 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.97:38404 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.97:38414 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:48508 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.97:38514 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.97:38526 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:48524 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.97:38616 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45988 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:45998 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:46008 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:57668 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:57678 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:57694 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:38524 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:38530 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:38536 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:34608 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:34612 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:34616 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:38280 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:38292 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-thtkc/taskflow] INFO:     10.244.0.1:38298 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mdjm5/taskflow] INFO:     Started server process [1]
+[pod/taskflow-df976ccb5-mdjm5/taskflow] INFO:     Waiting for application startup.
+[pod/taskflow-df976ccb5-mdjm5/taskflow] INFO:     Application startup complete.
+[pod/taskflow-df976ccb5-mdjm5/taskflow] INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[pod/taskflow-df976ccb5-mdjm5/taskflow] INFO:     10.244.0.1:47836 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mdjm5/taskflow] INFO:     10.244.0.1:40622 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mdjm5/taskflow] INFO:     10.244.0.1:40628 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mdjm5/taskflow] INFO:     10.244.0.1:40630 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.97:38580 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:59392 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:59404 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:59406 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:57542 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:57556 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:57566 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40940 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.96:40924 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:53338 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:53348 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:53352 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:48846 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:48852 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:48862 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:34172 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:34184 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mlffp/taskflow] INFO:     10.244.0.1:34190 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:49640 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:42550 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:42558 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:42568 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40938 - "GET /tasks HTTP/1.1" 500 Internal Server Error
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40954 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.96:40964 - "GET /tasks HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:41144 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:41154 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:41160 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:41376 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:41388 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:41402 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:32872 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:32878 - "GET /health HTTP/1.1" 200 OK
+[pod/taskflow-df976ccb5-mwfd5/taskflow] INFO:     10.244.0.1:32888 - "GET /health HTTP/1.1" 200 OK
